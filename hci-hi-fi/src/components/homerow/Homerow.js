@@ -1,10 +1,12 @@
+// THIS ISN'T USED CURRENTLY
+
 // Icons
 import birdIcon from "./../../assets/icons/Bird.png";
 import submitIcon from "./../../assets/icons/Submit.png";
 import usersIcon from "./../../assets/icons/Users.png";
 import accountIcon from "./../../assets/icons/Account.png";
 
-export default function Homerow(props) {
+export default function Homerow({ onRenderScreen }) {
   return (
     <div className="homerowContainer" style={styles.homerowContainer}>
       <img src={birdIcon} style={styles.homerowIcon} alt="" />

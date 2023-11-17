@@ -21,3 +21,21 @@
   width: 100%;
   height: auto;
 }
+
+.homerowContainer {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.homerowIcon {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100%);
+}
