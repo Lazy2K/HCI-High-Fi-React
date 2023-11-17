@@ -16,7 +16,7 @@ export default function HomeScreen(props) {
       <div className="HomeScreenContainer" style={styles.homeContainer}>
         <div className="Header"></div>
         <div className="Title" style={styles.title}>
-          Welcome Anissa, what birds can you see?
+          Welcome Nick, what birds can you see?
         </div>
       </div>
       <div className="ChipContainer" style={styles.chipContainer}>
