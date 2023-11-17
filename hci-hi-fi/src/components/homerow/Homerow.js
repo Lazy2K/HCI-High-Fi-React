@@ -1,21 +1,24 @@
 export default function Homerow(props) {
   return (
     <div className="homerowContainer" style={styles.homerowContainer}>
-      <ul>
-        <li>Hello</li>
-        <li>There</li>
-      </ul>
+      <div>Icon1</div>
+      <div>Icon2</div>
+      <div>Icon3</div>
+      <div>Icon4</div>
     </div>
   );
 }
 
 const styles = {
   homerowContainer: {
-    width: "100vw",
+    width: "100%",
     height: "auto",
-    backgroundColor: "#ffffff",
+    backgroundColor: "#afafaf",
     textAlign: "center",
     display: "flex",
-    justifyContent: "center",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingBottom: "2rem",
+    paddingTop: "2rem",
   },
 };

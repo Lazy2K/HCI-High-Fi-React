@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <div className="screenContainer">
         <div className="pageContainer"></div>
-        <div className="homerowContainer"></div>
+        <div className="homerowContainer">
+          <Homerow />
+        </div>
       </div>
     </div>
   );
