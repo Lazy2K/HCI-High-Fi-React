@@ -1,3 +1,7 @@
 export default function HomeScreen(props) {
-  return <div>Homescreen</div>;
+  return (
+    <div className="HomeScreen">
+      <div>Homescreen</div>
+    </div>
+  );
 }

@@ -14,12 +14,22 @@ import submitIcon from "./assets/icons/Submit.png";
 import usersIcon from "./assets/icons/Users.png";
 import accountIcon from "./assets/icons/Account.png";
 
+// High-res
+import background from "./assets/hd/highres-1.png";
+
 function App() {
   let [renderScreen, setRenderScreen] = useState(<HomeScreen />);
 
+  const setRenderScreenFunction = (screen) => {
+    setRenderScreen(screen);
+  };
+
   return (
     <div className="App">
-      <div className="screenContainer">
+      <div
+        className="screenContainer"
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <div className="pageContainer">{renderScreen}</div>
         <div className="homerowContainer">
           <img
@@ -44,7 +54,11 @@ function App() {
             src={accountIcon}
             alt=""
             className="homerowIcon"
-            onClick={() => setRenderScreen(<AccountScreen />)}
+            onClick={() =>
+              setRenderScreen(
+                <AccountScreen onSetRenderScreen={setRenderScreenFunction} />
+              )
+            }
           />
         </div>
       </div>
