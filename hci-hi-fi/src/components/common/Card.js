@@ -4,7 +4,7 @@ export default function BirdScreen(props) {
       <img src={props.image} style={styles.cardImage} />
       <div style={styles.cardInfo}>
         {props.name}
-        <p style={styles.cardDescription}>This is short bird description</p>
+        <p style={styles.cardDescription}>This is a short bird description</p>
       </div>
     </div>
   );
