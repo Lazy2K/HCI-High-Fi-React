@@ -14,7 +14,10 @@ export default function HomeScreen(props) {
   return (
     <div className="HomeScreen" style={styles.homeScreen}>
       <div className="HomeScreenContainer" style={styles.homeContainer}>
-        Title
+        <div className="Header"></div>
+        <div className="Title" style={styles.title}>
+          Welcome Anissa, what birds can you see?
+        </div>
       </div>
       <div className="ChipContainer" style={styles.chipContainer}>
         <Chip attribute={"Owls"} />
@@ -71,5 +74,11 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     gridGap: "0.7rem",
+  },
+  title: {
+    fontSize: "3rem",
+    fontWeight: "600",
+    color: "white",
+    lineHeight: "0.9",
   },
 };
