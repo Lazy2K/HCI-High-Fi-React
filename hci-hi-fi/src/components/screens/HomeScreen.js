@@ -38,17 +38,61 @@ export default function HomeScreen({ onSetRenderScreen }) {
             name="Falcon"
             onPress={() => onSetRenderScreen(<BirdScreen />)}
           />
-          <Card image={image02} name="Robbin" />
-          <Card image={image03} name="Blue Jay" />
-          <Card image={image04} name="Orange" />
-          <Card image={image05} name="Pecker" />
-          <Card image={image06} name="Gery Bird" />
-          <Card image={image01} name="Falcon" />
-          <Card image={image02} name="Robbin" />
-          <Card image={image03} name="Blue Jay" />
-          <Card image={image04} name="Orange" />
-          <Card image={image05} name="Pecker" />
-          <Card image={image06} name="Gery Bird" />
+          <Card
+            image={image02}
+            name="Robbin"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image03}
+            name="Blue Jay"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image04}
+            name="Orange"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image05}
+            name="Pecker"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image06}
+            name="Gery Bird"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image01}
+            name="Falcon"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image02}
+            name="Robbin"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image03}
+            name="Blue Jay"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image04}
+            name="Orange"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image05}
+            name="Pecker"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
+          <Card
+            image={image06}
+            name="Gery Bird"
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
+          />
         </div>
       </div>
     </div>

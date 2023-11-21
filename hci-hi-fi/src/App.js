@@ -33,6 +33,7 @@ function App() {
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="pageContainer">{renderScreen}</div>
+        {/* Homerow could be condensed into it's own component */}
         <div className="homerowContainer">
           <img
             src={birdIcon}
