@@ -36,7 +36,11 @@ function App() {
             src={birdIcon}
             alt=""
             className="homerowIcon"
-            onClick={() => setRenderScreen(<HomeScreen />)}
+            onClick={() =>
+              setRenderScreen(
+                <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
+              )
+            }
           />
           <img
             src={submitIcon}

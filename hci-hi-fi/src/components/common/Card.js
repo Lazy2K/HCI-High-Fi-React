@@ -1,4 +1,4 @@
-export default function BirdScreen(props) {
+export default function Card(props) {
   return (
     <div style={styles.card}>
       <img src={props.image} style={styles.cardImage} />

@@ -9,8 +9,9 @@ import image03 from "./../../assets/md/midres-3.jpg";
 import image04 from "./../../assets/md/midres-4.jpg";
 import image05 from "./../../assets/md/midres-5.jpg";
 import image06 from "./../../assets/md/midres-6.jpg";
+import BirdScreen from "./BirdScreen";
 
-export default function HomeScreen(props) {
+export default function HomeScreen({ onSetRenderScreen }) {
   return (
     <div className="HomeScreen" style={styles.homeScreen}>
       <div className="HomeScreenContainer" style={styles.homeContainer}>
@@ -32,7 +33,11 @@ export default function HomeScreen(props) {
       </div>
       <div className="HomeScreenContainer" style={styles.homeContainer}>
         <div className="cardContainer" style={styles.cardContainer}>
-          <Card image={image01} name="Falcon" />
+          <Card
+            image={image01}
+            name="Falcon"
+            onClick={() => onSetRenderScreen(<BirdScreen />)}
+          />
           <Card image={image02} name="Robbin" />
           <Card image={image03} name="Blue Jay" />
           <Card image={image04} name="Orange" />
@@ -59,6 +64,7 @@ const styles = {
     padding: "1.3rem",
     display: "flex",
     flexDirection: "column",
+    marginBottom: "8rem",
   },
   chipContainer: {
     display: "flex",

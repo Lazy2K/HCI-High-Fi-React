@@ -1,4 +1,4 @@
-export default function BirdScreen(props) {
+export default function Chip(props) {
   return <div style={styles.chip}>{props.attribute}</div>;
 }
 
