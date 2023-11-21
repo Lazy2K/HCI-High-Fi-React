@@ -18,11 +18,13 @@ import accountIcon from "./assets/icons/Account.png";
 import background from "./assets/hd/highres-1.png";
 
 function App() {
-  let [renderScreen, setRenderScreen] = useState(<HomeScreen />);
-
   const setRenderScreenFunction = (screen) => {
     setRenderScreen(screen);
   };
+
+  let [renderScreen, setRenderScreen] = useState(
+    <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
+  );
 
   return (
     <div className="App">
@@ -36,7 +38,11 @@ function App() {
             src={birdIcon}
             alt=""
             className="homerowIcon"
-            onClick={() => setRenderScreen(<HomeScreen />)}
+            onClick={() =>
+              setRenderScreen(
+                <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
+              )
+            }
           />
           <img
             src={submitIcon}
