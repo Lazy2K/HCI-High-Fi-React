@@ -36,7 +36,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           <Card
             image={image01}
             name="Falcon"
-            onClick={() => onSetRenderScreen(<BirdScreen />)}
+            onPress={() => onSetRenderScreen(<BirdScreen />)}
           />
           <Card image={image02} name="Robbin" />
           <Card image={image03} name="Blue Jay" />

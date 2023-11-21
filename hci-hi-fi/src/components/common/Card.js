@@ -1,12 +1,12 @@
 export default function Card(props) {
   return (
-    <div style={styles.card}>
+    <button onClick={props.onPress} style={styles.card}>
       <img src={props.image} style={styles.cardImage} />
       <div style={styles.cardInfo}>
         {props.name}
         <p style={styles.cardDescription}>This is a short bird description</p>
       </div>
-    </div>
+    </button>
   );
 }
 
