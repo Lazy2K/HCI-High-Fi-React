@@ -6,7 +6,7 @@ export default function Sound(audioFile) {
   const audio = new Audio(FalconAudio); // This is hardcoded rn bc
   audio.loop = false;
 
-  const [isPaused, setIsPaused] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
     audio.play();
