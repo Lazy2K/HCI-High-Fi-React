@@ -1,7 +1,7 @@
 export default function Card(props) {
   return (
     <button onClick={props.onPress} style={styles.card}>
-      <img src={props.image} style={styles.cardImage} />
+      <img src={props.image} style={styles.cardImage} alt="Bird Image" />
       <div style={styles.cardInfo}>
         {props.name}
         <p style={styles.cardDescription}>This is a short bird description</p>
