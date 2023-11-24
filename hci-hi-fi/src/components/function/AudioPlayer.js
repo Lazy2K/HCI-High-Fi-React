@@ -10,18 +10,15 @@ export default function Sound(audioFile) {
 
   const handlePlay = () => {
     audio.play();
-    setIsPaused(false);
   };
 
   const handlePause = () => {
     audio.pause();
-    setIsPaused(true);
   };
 
   const handleStop = () => {
     audio.pause();
     audio.currentTime = 0;
-    setIsPaused(false);
   };
 
   return (

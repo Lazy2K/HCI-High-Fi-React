@@ -18,6 +18,7 @@ const styles = {
     borderStyle: "solid",
     borderColor: "#60606060",
     backdropFilter: "blur(5px)",
+    padding: "0px",
   },
   cardImage: {
     width: "100%",
@@ -33,6 +34,6 @@ const styles = {
     fontSize: "1rem",
     fontWeight: "400",
     marginTop: "0.2rem",
-    marginBottom: "0rem",
+    marginBottom: "1rem",
   },
 };
