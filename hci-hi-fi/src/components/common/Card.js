@@ -10,7 +10,9 @@ export default function Card(props) {
       <img src={props.image} className="cardImage" alt="Bird Image" />
       <div className="cardInfo">
         {props.name}
-        <p className="cardDescription">This is a short bird description</p>
+        <p className="cardDescription">
+          This is a short description of the bird's appearance
+        </p>
       </div>
     </button>
   );
