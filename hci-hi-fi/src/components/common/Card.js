@@ -1,39 +1,17 @@
+import "./cardStyle.css";
+
 export default function Card(props) {
   return (
-    <button onClick={props.onPress} style={styles.card}>
-      <img src={props.image} style={styles.cardImage} alt="Bird Image" />
-      <div style={styles.cardInfo}>
+    <button
+      onClick={props.onPress}
+      className="card"
+      style={{ backgroundColor: `${props.color}` }}
+    >
+      <img src={props.image} className="cardImage" alt="Bird Image" />
+      <div className="cardInfo">
         {props.name}
-        <p style={styles.cardDescription}>This is a short bird description</p>
+        <p className="cardDescription">This is a short bird description</p>
       </div>
     </button>
   );
 }
-
-const styles = {
-  card: {
-    borderRadius: "10px",
-    backgroundColor: "#00000060",
-    border: "1px",
-    borderStyle: "solid",
-    borderColor: "#60606060",
-    backdropFilter: "blur(5px)",
-    padding: "0px",
-  },
-  cardImage: {
-    width: "100%",
-    borderRadius: "10px 10px 0px 0px",
-  },
-  cardInfo: {
-    fontWeight: "600",
-    fontSize: "2rem",
-    padding: "1rem",
-    color: "#ffffff",
-  },
-  cardDescription: {
-    fontSize: "1rem",
-    fontWeight: "400",
-    marginTop: "0.2rem",
-    marginBottom: "1rem",
-  },
-};

@@ -28,10 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <div
-        className="screenContainer"
-        style={{ backgroundImage: `url(${background})` }}
-      >
+      <div className="screenContainer">
         <div className="pageContainer">{renderScreen}</div>
         {/* Homerow could be condensed into it's own component */}
         <div className="homerowContainer">

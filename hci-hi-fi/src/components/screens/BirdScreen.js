@@ -1,12 +1,15 @@
 import Sound from "../function/AudioPlayer";
 import BackButton from "../common/BackButton";
 
-import MainImage from "./../../assets/hd/highres-2.jpg";
+import falcon from "./../../assets/png/falcon-1.png";
 
 export default function BirdScreen(props) {
   return (
     <div style={styles.homeScreen}>
-      <Sound audioFile={null} />
+      <img src={falcon} style={styles.mainImage} />
+      <div style={styles.pageContent}>
+        <Sound audioFile={null} />
+      </div>
     </div>
   );
 }
@@ -16,7 +19,7 @@ const styles = {
     width: "100%",
     height: "100%",
     backdropFilter: "blur(5px)",
-    backgroundColor: "#000000a0",
+    backgroundColor: "#999999",
   },
   homeContainer: {
     padding: "1.3rem",
@@ -30,11 +33,19 @@ const styles = {
     backdropFilter: "blur(5px)",
   },
   mainImage: {
-    borderRadius: "10px",
+    width: "100%",
+    margin: "0px",
+    padding: "0px",
   },
   headerContainer: {
     width: "100%",
     display: "flex",
     flexDirection: "row",
+  },
+  pageContent: {
+    width: "100%",
+    backgroundColor: "white",
+    margin: "0px",
+    padding: "0px",
   },
 };
