@@ -4,7 +4,7 @@ export default function BirdScreen(props) {
   return (
     <div>
       <Sound audioFile={null} />
-      <div>
+      <div style={styles.textBody}>
         Falcons are birds of prey in the genus Falco, which includes about 40
         species. Falcons are widely distributed on all continents of the world
         except Antarctica. Adult falcons have thin, tapered wings, which enable
@@ -17,3 +17,9 @@ export default function BirdScreen(props) {
     </div>
   );
 }
+
+const styles = {
+  textBody: {
+    color: "white",
+  },
+};
