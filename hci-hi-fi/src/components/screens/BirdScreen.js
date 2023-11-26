@@ -1,25 +1,40 @@
 import Sound from "../function/AudioPlayer";
+import BackButton from "../common/BackButton";
+
+import MainImage from "./../../assets/hd/highres-2.jpg";
 
 export default function BirdScreen(props) {
   return (
-    <div>
+    <div style={styles.homeScreen}>
       <Sound audioFile={null} />
-      <div style={styles.textBody}>
-        Falcons are birds of prey in the genus Falco, which includes about 40
-        species. Falcons are widely distributed on all continents of the world
-        except Antarctica. Adult falcons have thin, tapered wings, which enable
-        them to fly at high speed and change direction rapidly. Fledgling
-        falcons, in their first year of flying, have longer flight feathers,
-        which make their configuration more like that of a general-purpose bird
-        such as a broad wing. This makes flying easier while learning the
-        exceptional skills required to be effective hunters as adults.
-      </div>
     </div>
   );
 }
 
 const styles = {
+  homeScreen: {
+    width: "100%",
+    height: "100%",
+    backdropFilter: "blur(5px)",
+    backgroundColor: "#000000a0",
+  },
+  homeContainer: {
+    padding: "1.3rem",
+    display: "flex",
+    flexDirection: "column",
+    marginBottom: "8rem",
+  },
   textBody: {
     color: "white",
+    backgroundColor: "#00000060",
+    backdropFilter: "blur(5px)",
+  },
+  mainImage: {
+    borderRadius: "10px",
+  },
+  headerContainer: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
   },
 };
