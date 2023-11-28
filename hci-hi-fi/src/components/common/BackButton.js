@@ -2,7 +2,11 @@ import leftIcon from "./../../assets/icons/LeftArrow.png";
 
 export default function BackButton(props) {
   return (
-    <button className="BackButton" style={styles.backButton}>
+    <button
+      className="BackButton"
+      style={styles.backButton}
+      onClick={() => props.clickFunction}
+    >
       <img src={leftIcon} alt="Go Back" style={styles.backIcon} />
     </button>
   );
