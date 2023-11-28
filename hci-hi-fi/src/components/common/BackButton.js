@@ -1,4 +1,4 @@
-import leftIcon from "./../../assets/icons/Left.png";
+import leftIcon from "./../../assets/icons/LeftArrow.png";
 
 export default function BackButton(props) {
   return (
@@ -11,12 +11,13 @@ export default function BackButton(props) {
 const styles = {
   backButton: {
     borderRadius: "50%",
-    width: "2.5rem",
-    height: "2.5rem",
+    width: "3rem",
+    height: "3rem",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     border: "0px",
+    backgroundColor: "#ffffff",
   },
   backIcon: {
     width: "70%",
