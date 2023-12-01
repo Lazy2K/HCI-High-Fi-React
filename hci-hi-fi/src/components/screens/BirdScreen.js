@@ -14,7 +14,9 @@ export default function BirdScreen(props) {
           }
         />
       </div>
-      <div className="PageContainer"></div>
+      <div className="PageContainer">
+        <img src={falcon} alt="Bird Image" />
+      </div>
     </div>
   );
 }
