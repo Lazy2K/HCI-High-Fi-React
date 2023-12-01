@@ -8,7 +8,11 @@ export default function BirdScreen(props) {
   return (
     <div className="BirdScreen" style={styles.birdScreen}>
       <div className="HeaderContainer" style={styles.headerContainer}>
-        <BackButton clickFunction={() => console.log("hello")} />
+        <BackButton
+          clickFunction={() =>
+            props.clicky(<HomeScreen onSetRenderScreen={props.clicky} />)
+          }
+        />
       </div>
       <div className="PageContainer"></div>
     </div>
