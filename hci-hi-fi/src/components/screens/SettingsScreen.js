@@ -23,6 +23,6 @@ const styles = {
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    padding: "2rem 2rem 2rem 2rem",
+    padding: "1.3rem",
   },
 };
