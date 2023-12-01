@@ -1,0 +1,10 @@
+.audioPlayer button {
+  border: 0px;
+  margin-right: 0.2rem;
+  background-color: #e0e0e0;
+}
+
+.audioPlayer img {
+  width: 2rem;
+  height: 2rem;
+}
