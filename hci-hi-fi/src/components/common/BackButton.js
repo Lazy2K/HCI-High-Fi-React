@@ -5,7 +5,7 @@ export default function BackButton(props) {
     <button
       className="BackButton"
       style={styles.backButton}
-      onClick={() => props.clickFunction}
+      onClick={props.clickFunction}
     >
       <img src={leftIcon} alt="Go Back" style={styles.backIcon} />
     </button>

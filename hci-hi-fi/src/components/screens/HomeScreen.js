@@ -40,7 +40,11 @@ export default function HomeScreen({ onSetRenderScreen }) {
           <Card
             image={image01}
             name="Falcon"
-            onPress={() => onSetRenderScreen(<BirdScreen />)}
+            onPress={() =>
+              onSetRenderScreen(
+                <BirdScreen clickFunction={{ onSetRenderScreen }} />
+              )
+            }
             color={"#f9d58c"}
           />
           <Card
