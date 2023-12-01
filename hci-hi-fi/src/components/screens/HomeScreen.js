@@ -10,6 +10,28 @@ import image04 from "./../../assets/md/midres-4.jpg";
 import image05 from "./../../assets/md/midres-5.jpg";
 import image06 from "./../../assets/md/midres-6.jpg";
 
+// Bird Images
+import bird01 from "./../../assets/bird-images/blackbird.jpg";
+import bird02 from "./../../assets/bird-images/blue-tit.jpg";
+import bird03 from "./../../assets/bird-images/carrion-crow.jpg";
+import bird04 from "./../../assets/bird-images/chaffinch.jpg";
+import bird05 from "./../../assets/bird-images/coal-tit.jpg";
+import bird06 from "./../../assets/bird-images/collared-dove.jpg";
+import bird07 from "./../../assets/bird-images/dunnock.jpg";
+import bird08 from "./../../assets/bird-images/feral-pigeon.jpg";
+import bird09 from "./../../assets/bird-images/goldfinch.jpg";
+import bird10 from "./../../assets/bird-images/great-tit.jpg";
+import bird11 from "./../../assets/bird-images/greenfinch.jpg";
+import bird12 from "./../../assets/bird-images/house-sparrow.jpg";
+import bird13 from "./../../assets/bird-images/jackdaw.jpg";
+import bird14 from "./../../assets/bird-images/long-tailed-tit.jpg";
+import bird15 from "./../../assets/bird-images/magpie.jpg";
+import bird16 from "./../../assets/bird-images/robin.jpg";
+import bird17 from "./../../assets/bird-images/rook.jpg";
+import bird18 from "./../../assets/bird-images/starling.jpg";
+import bird19 from "./../../assets/bird-images/wood-pigeon.jpg";
+import bird20 from "./../../assets/bird-images/wren.jpg";
+
 import logo from "./../../assets/logos/logo-1.png";
 
 import BirdScreen from "./BirdScreen";
@@ -38,15 +60,15 @@ export default function HomeScreen({ onSetRenderScreen }) {
       <div className="HomeScreenContainer" style={styles.homeContainer}>
         <div className="cardContainer" style={styles.cardContainer}>
           <Card
-            image={image01}
-            name="Falcon"
+            image={bird01}
+            name="Blackbird"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
-            color={"#f9d58c"}
+            color={"#9e9e9e"}
           />
           <Card
-            image={image02}
+            image={bird02}
             name="Robbin"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -54,7 +76,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#ecb88f"}
           />
           <Card
-            image={image04}
+            image={bird03}
             name="Orange"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -62,7 +84,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#f1ae84"}
           />
           <Card
-            image={image03}
+            image={bird04}
             name="Blue Jay"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -71,7 +93,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
 
           <Card
-            image={image05}
+            image={bird05}
             name="Pecker"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -79,7 +101,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#86a5d2"}
           />
           <Card
-            image={image01}
+            image={bird06}
             name="Falcon"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -87,7 +109,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#f9d58c"}
           />
           <Card
-            image={image06}
+            image={bird07}
             name="Gery Bird"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -95,7 +117,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#91b4d2"}
           />
           <Card
-            image={image03}
+            image={bird08}
             name="Blue Jay"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -104,7 +126,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
 
           <Card
-            image={image02}
+            image={bird09}
             name="Robbin"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -113,7 +135,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
 
           <Card
-            image={image04}
+            image={bird10}
             name="Orange"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -121,7 +143,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#f1ae84"}
           />
           <Card
-            image={image05}
+            image={bird11}
             name="Pecker"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -129,7 +151,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#86a5d2"}
           />
           <Card
-            image={image06}
+            image={bird12}
             name="Gery Bird"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -137,7 +159,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#91b4d2"}
           />
           <Card
-            image={image01}
+            image={bird13}
             name="Falcon"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -145,7 +167,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#f9d58c"}
           />
           <Card
-            image={image02}
+            image={bird14}
             name="Robbin"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -153,7 +175,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#ecb88f"}
           />
           <Card
-            image={image04}
+            image={bird15}
             name="Orange"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -161,7 +183,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#f1ae84"}
           />
           <Card
-            image={image03}
+            image={bird16}
             name="Blue Jay"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -170,7 +192,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
 
           <Card
-            image={image05}
+            image={bird17}
             name="Pecker"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -178,7 +200,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#86a5d2"}
           />
           <Card
-            image={image01}
+            image={bird18}
             name="Falcon"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -186,7 +208,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#f9d58c"}
           />
           <Card
-            image={image06}
+            image={bird19}
             name="Gery Bird"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
@@ -194,46 +216,12 @@ export default function HomeScreen({ onSetRenderScreen }) {
             color={"#91b4d2"}
           />
           <Card
-            image={image03}
+            image={bird20}
             name="Blue Jay"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
             color={"#ddf4fa"}
-          />
-
-          <Card
-            image={image02}
-            name="Robbin"
-            onPress={() =>
-              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
-            }
-            color={"#ecb88f"}
-          />
-
-          <Card
-            image={image04}
-            name="Orange"
-            onPress={() =>
-              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
-            }
-            color={"#f1ae84"}
-          />
-          <Card
-            image={image05}
-            name="Pecker"
-            onPress={() =>
-              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
-            }
-            color={"#86a5d2"}
-          />
-          <Card
-            image={image06}
-            name="Gery Bird"
-            onPress={() =>
-              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
-            }
-            color={"#91b4d2"}
           />
         </div>
         <div style={styles.endText}>That's all the them!</div>

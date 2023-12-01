@@ -2,7 +2,7 @@ import Sound from "../function/AudioPlayer";
 import BackButton from "../common/BackButton";
 import HomeScreen from "./HomeScreen";
 
-import falcon from "./../../assets/md/midres-1.jpg";
+import falcon from "./../../assets/hd/highres-2.jpg";
 
 export default function BirdScreen(props) {
   return (
@@ -14,7 +14,10 @@ export default function BirdScreen(props) {
           }
         />
       </div>
-      <div className="PageContainer"></div>
+      <div className="PageContainer" style={styles.pageContainer}>
+        <img src={falcon} style={styles.birdImage} alt="Bird Image" />
+        <div>Hello</div>
+      </div>
     </div>
   );
 }
@@ -32,5 +35,11 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     padding: "1.3rem",
+  },
+  pageContainer: {
+    padding: "1.3rem",
+  },
+  birdImage: {
+    width: "100%",
   },
 };
