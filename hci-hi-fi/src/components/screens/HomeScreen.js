@@ -69,32 +69,32 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird02}
-            name="Robbin"
-            onPress={() =>
-              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
-            }
-            color={"#ecb88f"}
-          />
-          <Card
-            image={bird03}
-            name="Orange"
-            onPress={() =>
-              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
-            }
-            color={"#f1ae84"}
-          />
-          <Card
-            image={bird04}
-            name="Blue Jay"
+            name="Blue Tit"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
             color={"#ddf4fa"}
           />
+          <Card
+            image={bird03}
+            name="Crow"
+            onPress={() =>
+              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+            }
+            color={"#9e9e9e"}
+          />
+          <Card
+            image={bird04}
+            name="Chaffinch"
+            onPress={() =>
+              onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+            }
+            color={"#f1ae84"}
+          />
 
           <Card
             image={bird05}
-            name="Pecker"
+            name="Coal Tit"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -102,7 +102,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird06}
-            name="Falcon"
+            name="Dove"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -110,24 +110,24 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird07}
-            name="Gery Bird"
+            name="Dunnock"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
-            color={"#91b4d2"}
+            color={"#ecb88f"}
           />
           <Card
             image={bird08}
-            name="Blue Jay"
+            name="Pigeon"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
-            color={"#ddf4fa"}
+            color={"#f9d58c"}
           />
 
           <Card
             image={bird09}
-            name="Robbin"
+            name="Goldfinch"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -136,7 +136,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
 
           <Card
             image={bird10}
-            name="Orange"
+            name="Great Tit"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -144,15 +144,15 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird11}
-            name="Pecker"
+            name="Green"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
-            color={"#86a5d2"}
+            color={"#a7e391"}
           />
           <Card
             image={bird12}
-            name="Gery Bird"
+            name="Sparrow"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -160,7 +160,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird13}
-            name="Falcon"
+            name="Jackdaw"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -168,7 +168,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird14}
-            name="Robbin"
+            name="Tail Tit"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -176,7 +176,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird15}
-            name="Orange"
+            name="Magpie"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -184,7 +184,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird16}
-            name="Blue Jay"
+            name="Robin"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -193,7 +193,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
 
           <Card
             image={bird17}
-            name="Pecker"
+            name="Rook"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -201,7 +201,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird18}
-            name="Falcon"
+            name="Starling"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -209,7 +209,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird19}
-            name="Gery Bird"
+            name="Pigeon"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
@@ -217,7 +217,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
           />
           <Card
             image={bird20}
-            name="Blue Jay"
+            name="Wren"
             onPress={() =>
               onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
             }
