@@ -5,6 +5,7 @@ import BackButton from "../common/BackButton";
 import HomeScreen from "./HomeScreen";
 
 import mainBird from "./../../assets/bird-images/chaffinch.jpg";
+import birdDraw from "./../../assets/png/orange-bird.png";
 
 import share from "./../../assets/icons/Share.png";
 
@@ -14,6 +15,8 @@ export default function BirdScreen(props) {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleHide = () => setShow(false);
+
+  const [count, setCount] = useState(0);
 
   return (
     <div className="BirdScreen" style={styles.birdScreen}>
@@ -28,9 +31,27 @@ export default function BirdScreen(props) {
         <div className="ModalContainer" style={styles.modalContainer}>
           <div className="modal" style={{ display: show ? "block" : "none" }}>
             <div style={{ justifyContent: "center", display: "flex" }}>
-              <img src={mainBird} className="modalImage" />
+              <img src={birdDraw} className="modalImage" />
             </div>
-            <div>Counter</div>
+            <div className="modalCounterContainer">
+              <button
+                className="modalCounterNumber modalCounterButton"
+                onClick={() =>
+                  count > 0
+                    ? setCount(count - 1)
+                    : console.log("Count can't go below zero")
+                }
+              >
+                -
+              </button>
+              <div class="modalCounterNumber">{count}</div>
+              <button
+                class="modalCounterNumber modalCounterButton"
+                onClick={() => setCount(count + 1)}
+              >
+                +
+              </button>
+            </div>
             <div>
               <button className="confirmButon" onClick={handleHide}>
                 Confirm

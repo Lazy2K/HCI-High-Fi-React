@@ -1,20 +1,44 @@
 .modal {
   position: fixed;
-  background-color: blue;
-  top: 40rem; /* SCUFFFEEEDD SOLUTION */
+  background-color: #c0c0c0;
+  top: 34rem; /* SCUFFFEEEDD SOLUTION */
   padding: 2rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .modalImage {
-  width: 25%;
+  width: 12rem;
+  border-radius: 10px;
 }
 
 .confirmButon {
   width: 100%;
+  border: 0px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.modalCounterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.modalCounterNumber {
+  font-family: "DM Sans", sans-serif;
+  font-size: 5rem;
+}
+
+.modalCounterButton {
+  background-color: transparent;
   border: 0px;
 }
