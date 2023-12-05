@@ -27,9 +27,15 @@ export default function BirdScreen(props) {
       <div className="PageContainer" style={styles.pageContainer}>
         <div className="ModalContainer" style={styles.modalContainer}>
           <div className="modal" style={{ display: show ? "block" : "none" }}>
-            Modal Content
-            <button onClick={handleHide}>Confirm</button>
-            <button onClick={handleHide}>Confirm</button>
+            <div style={{ justifyContent: "center", display: "flex" }}>
+              <img src={mainBird} className="modalImage" />
+            </div>
+            <div>Counter</div>
+            <div>
+              <button className="confirmButon" onClick={handleHide}>
+                Confirm
+              </button>
+            </div>
           </div>
         </div>
 
