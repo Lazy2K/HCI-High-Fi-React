@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Sound from "../function/AudioPlayer";
 import BackButton from "../common/BackButton";
 import HomeScreen from "./HomeScreen";
@@ -6,7 +8,13 @@ import mainBird from "./../../assets/bird-images/chaffinch.jpg";
 
 import share from "./../../assets/icons/Share.png";
 
+import "./css/BirdScreen.css";
+
 export default function BirdScreen(props) {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleHide = () => setShow(false);
+
   return (
     <div className="BirdScreen" style={styles.birdScreen}>
       <div className="HeaderContainer" style={styles.headerContainer}>
@@ -17,6 +25,14 @@ export default function BirdScreen(props) {
         />
       </div>
       <div className="PageContainer" style={styles.pageContainer}>
+        <div className="ModalContainer" style={styles.modalContainer}>
+          <div className="modal" style={{ display: show ? "block" : "none" }}>
+            Modal Content
+            <button onClick={handleHide}>Confirm</button>
+            <button onClick={handleHide}>Confirm</button>
+          </div>
+        </div>
+
         <img src={mainBird} style={styles.birdImage} alt="Bird Image" />
         <div style={styles.birdInfo}>
           <div style={styles.birdInfoInner}>
@@ -45,7 +61,9 @@ export default function BirdScreen(props) {
               </div>
             </div>
           </div>
-          <button style={styles.reportButton}>Report Numbers</button>
+          <button onClick={handleShow} style={styles.reportButton}>
+            Report Numbers
+          </button>
         </div>
       </div>
     </div>
@@ -109,5 +127,10 @@ const styles = {
   },
   birdInfoInner: {
     padding: "0rem 1rem 0rem 1rem",
+  },
+  modalContainer: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
   },
 };

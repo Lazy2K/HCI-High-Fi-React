@@ -8,3 +8,7 @@
   font-weight: 500;
   color: #112328;
 }
+
+.chip:hover {
+  background-color: #dfdbd8 !important;
+}
