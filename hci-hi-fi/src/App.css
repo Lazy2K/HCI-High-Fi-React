@@ -50,3 +50,8 @@
   width: 2rem;
   height: 2rem;
 }
+
+.settingsButton {
+  border: 0px;
+  background-color: transparent;
+}
