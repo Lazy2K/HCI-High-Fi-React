@@ -11,7 +11,7 @@ export default function Chip(props) {
       style={{ backgroundColor: `${props.color}` }}
     >
       {props.attribute}
-      <img src={props.icon} alt="icon" className="chip-icon" />
+      <img src={props.icon} alt="" className="chip-icon" />
     </div>
   );
 }
