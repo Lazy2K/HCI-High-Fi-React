@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
   background-color: #c0c0c0;
-  top: 34rem; /* SCUFFFEEEDD SOLUTION */
+  top: 10rem; /* SCUFFFEEEDD SOLUTION */
   padding: 2rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
