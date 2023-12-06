@@ -4,7 +4,11 @@ export default function AccountScreen({ onSetRenderScreen }) {
   return (
     <div className="HomeScreen">
       <div>Account</div>
-      <button onClick={() => onSetRenderScreen(<SettingsScreen />)}>
+      <button
+        onClick={() =>
+          onSetRenderScreen(<SettingsScreen clicky={onSetRenderScreen} />)
+        }
+      >
         Settings
       </button>
     </div>
