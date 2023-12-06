@@ -1,0 +1,35 @@
+.accountScreen {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.accountScreenContainer {
+  padding: 1.3rem;
+}
+
+.screenHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profilePicture {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.accountTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #032135;
+  line-height: 0.9;
+  margin-top: 3rem;
+}
+
+.settingsIcon {
+  width: 2rem;
+  height: 2rem;
+}
