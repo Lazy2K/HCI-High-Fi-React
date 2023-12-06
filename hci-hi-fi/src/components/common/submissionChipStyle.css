@@ -1,0 +1,35 @@
+.chip {
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  margin: 0rem 0.3rem 0rem 0.3rem;
+  border-radius: 10px;
+  border: 0px;
+  border-style: solid;
+  border-color: #60606060;
+  font-weight: 500;
+  color: #112328;
+}
+
+.submissions-chip {
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  margin: 0rem 0.3rem 0rem 0.3rem;
+  border-radius: 10px;
+  border: 0px;
+  border-style: solid;
+  border-color: #60606060;
+  font-weight: 500;
+  color: #112328;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.chip img {
+  margin-left: 8px;
+  max-height: 100%;
+}
+
+.chip:hover {
+  background-color: #dfdbd8 !important;
+}
