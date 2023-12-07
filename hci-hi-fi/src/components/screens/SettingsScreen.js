@@ -14,8 +14,6 @@ import { useContext } from "react";
 export default function SettingsScreen(props) {
   const [internalUser, setInternalUser] = useContext(UserContext);
 
-  console.log(internalUser);
-
   return (
     <UserContextProvider>
       <div className="SettingsScreen" style={styles.settingsScreen}>
