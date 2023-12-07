@@ -1,5 +1,6 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect, useContext, createContext } from "react";
 
 // Screens
 import HomeScreen from "./components/screens/HomeScreen";
@@ -18,6 +19,13 @@ import accountIcon from "./assets/icons/Account.png";
 import background from "./assets/hd/highres-1.png";
 
 function App() {
+  const setUserFunction = (user) => {
+    setUser(user);
+    console.log(user);
+  };
+
+  let [user, setUser] = useState({ largeFont: false });
+
   const setRenderScreenFunction = (screen) => {
     setRenderScreen(screen);
   };
@@ -25,10 +33,6 @@ function App() {
   let [renderScreen, setRenderScreen] = useState(
     <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
   );
-
-  let userSettings = {
-    fontSize: "normal",
-  };
 
   return (
     <div className="App">
@@ -64,7 +68,10 @@ function App() {
             className="homerowIcon"
             onClick={() =>
               setRenderScreen(
-                <AccountScreen onSetRenderScreen={setRenderScreenFunction} />
+                <AccountScreen
+                  onSetRenderScreen={setRenderScreenFunction}
+                  user={{ user, setUserFunction }}
+                />
               )
             }
           />

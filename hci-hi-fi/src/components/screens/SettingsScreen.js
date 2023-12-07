@@ -1,7 +1,10 @@
 import BackButton from "../common/BackButton";
 import AccountScreen from "./AccountScreen";
 
+import Switch from "@mui/material/Switch";
+
 import "./css/settingsScreen.css";
+import { useState, useContext, createContext } from "react";
 
 export default function SettingsScreen(props) {
   return (
@@ -9,7 +12,12 @@ export default function SettingsScreen(props) {
       <div className="HeaderContainer" style={styles.headerContainer}>
         <BackButton
           clickFunction={() =>
-            props.clicky(<AccountScreen onSetRenderScreen={props.clicky} />)
+            props.clicky(
+              <AccountScreen
+                onSetRenderScreen={props.clicky}
+                user={props.user}
+              />
+            )
           }
         />
       </div>
@@ -18,7 +26,10 @@ export default function SettingsScreen(props) {
         <div className="settingsInfoContainer">
           <div className="settingsInfoRow">
             <div>Font Size</div>
-            <div>Edit</div>
+            <Switch
+              checked={props.user.largeFont}
+              onChange={() => props.user.setUserFunction({ largeFont: true })}
+            ></Switch>
           </div>
           <div className="settingsInfoRow">
             <div>High Contrast</div>
