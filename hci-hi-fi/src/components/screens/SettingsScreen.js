@@ -1,6 +1,8 @@
 import BackButton from "../common/BackButton";
 import AccountScreen from "./AccountScreen";
 
+import "./css/settingsScreen.css";
+
 export default function SettingsScreen(props) {
   return (
     <div className="SettingsScreen" style={styles.settingsScreen}>
@@ -11,7 +13,23 @@ export default function SettingsScreen(props) {
           }
         />
       </div>
-      <div className="PageContainer"></div>
+      <div className="settingsPageContainer">
+        <div className="accountTitle">Settings.</div>
+        <div className="settingsInfoContainer">
+          <div className="settingsInfoRow">
+            <div>Username: Nick</div>
+            <div>Edit</div>
+          </div>
+          <div className="settingsInfoRow">
+            <div>Email: nick@gmail.com</div>
+            <div>Edit</div>
+          </div>
+          <div className="settingsInfoRow">
+            <div className="acountInfoData">Password</div>
+            <div className="accountInfoEdit">Change Password</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
