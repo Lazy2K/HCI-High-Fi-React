@@ -5,7 +5,9 @@ import "./css/accountScreen.css";
 import profilePicture from "./../../assets/md/Man.jpg";
 import settingsIcon from "./../../assets/icons/Settings.png";
 
-export default function AccountScreen({ onSetRenderScreen }) {
+export default function AccountScreen(props) {
+  console.log(props);
+
   return (
     <div className="accountScreen">
       <div className="accountScreenContainer">
@@ -14,10 +16,12 @@ export default function AccountScreen({ onSetRenderScreen }) {
           <button
             className="settingsButton"
             onClick={() =>
-              onSetRenderScreen(<SettingsScreen clicky={onSetRenderScreen} />)
+              props.onSetRenderScreen(
+                <SettingsScreen clicky={props.onSetRenderScreen} />
+              )
             }
           >
-            <img class="settingsIcon" src={settingsIcon} />
+            <img className="settingsIcon" src={settingsIcon} />
           </button>
         </div>
         <div className="accountTitle">Nick! Welcome to your account.</div>
