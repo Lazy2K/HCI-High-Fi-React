@@ -18,13 +18,15 @@ import accountIcon from "./assets/icons/Account.png";
 // High-res
 import background from "./assets/hd/highres-1.png";
 
+import { UserContextProvider } from "./components/function/userContext";
+
 function App() {
+  let [user, setUser] = useState({});
+
   const setUserFunction = (user) => {
     setUser(user);
     console.log(user);
   };
-
-  let [user, setUser] = useState({ largeFont: false });
 
   const setRenderScreenFunction = (screen) => {
     setRenderScreen(screen);
@@ -35,49 +37,51 @@ function App() {
   );
 
   return (
-    <div className="App">
-      <div className="screenContainer">
-        <div className="pageContainer">{renderScreen}</div>
-        {/* Homerow could be condensed into it's own component */}
-        <div className="homerowContainer">
-          <img
-            src={birdIcon}
-            alt=""
-            className="homerowIcon"
-            onClick={() =>
-              setRenderScreen(
-                <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
-              )
-            }
-          />
-          <img
-            src={submitIcon}
-            alt=""
-            className="homerowIcon"
-            onClick={() => setRenderScreen(<SubmissionScreen />)}
-          />
-          <img
-            src={usersIcon}
-            alt=""
-            className="homerowIcon"
-            onClick={() => setRenderScreen(<CommunityScreen />)}
-          />
-          <img
-            src={accountIcon}
-            alt=""
-            className="homerowIcon"
-            onClick={() =>
-              setRenderScreen(
-                <AccountScreen
-                  onSetRenderScreen={setRenderScreenFunction}
-                  user={{ user, setUserFunction }}
-                />
-              )
-            }
-          />
+    <UserContextProvider>
+      <div className="App">
+        <div className="screenContainer">
+          <div className="pageContainer">{renderScreen}</div>
+          {/* Homerow could be condensed into it's own component */}
+          <div className="homerowContainer">
+            <img
+              src={birdIcon}
+              alt=""
+              className="homerowIcon"
+              onClick={() =>
+                setRenderScreen(
+                  <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
+                )
+              }
+            />
+            <img
+              src={submitIcon}
+              alt=""
+              className="homerowIcon"
+              onClick={() => setRenderScreen(<SubmissionScreen />)}
+            />
+            <img
+              src={usersIcon}
+              alt=""
+              className="homerowIcon"
+              onClick={() => setRenderScreen(<CommunityScreen />)}
+            />
+            <img
+              src={accountIcon}
+              alt=""
+              className="homerowIcon"
+              onClick={() =>
+                setRenderScreen(
+                  <AccountScreen
+                    onSetRenderScreen={setRenderScreenFunction}
+                    user={{ user, setUserFunction }}
+                  />
+                )
+              }
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </UserContextProvider>
   );
 }
 
