@@ -33,3 +33,32 @@
   width: 2rem;
   height: 2rem;
 }
+
+.accountInfoContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-top: 2rem;
+}
+
+.accountInfoRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.acountInfoData {
+}
+
+.accountInfoEdit {
+}
