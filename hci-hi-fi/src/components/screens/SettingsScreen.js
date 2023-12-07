@@ -22,12 +22,7 @@ export default function SettingsScreen(props) {
         <div className="HeaderContainer" style={styles.headerContainer}>
           <BackButton
             clickFunction={() =>
-              props.clicky(
-                <AccountScreen
-                  onSetRenderScreen={props.clicky}
-                  user={props.user}
-                />
-              )
+              props.clicky(<AccountScreen onSetRenderScreen={props.clicky} />)
             }
           />
         </div>
@@ -38,7 +33,12 @@ export default function SettingsScreen(props) {
               <div>Font Size</div>
               <Switch
                 checked={internalUser.largeFont}
-                onChange={() => setInternalUser({ testing: "432" })}
+                onChange={() =>
+                  setInternalUser({
+                    ...internalUser,
+                    largeFont: internalUser.largeFont ? false : true,
+                  })
+                }
               ></Switch>
             </div>
             <div className="settingsInfoRow">

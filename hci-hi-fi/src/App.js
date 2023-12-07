@@ -21,13 +21,6 @@ import background from "./assets/hd/highres-1.png";
 import { UserContextProvider } from "./components/function/userContext";
 
 function App() {
-  let [user, setUser] = useState({});
-
-  const setUserFunction = (user) => {
-    setUser(user);
-    console.log(user);
-  };
-
   const setRenderScreenFunction = (screen) => {
     setRenderScreen(screen);
   };
@@ -71,10 +64,7 @@ function App() {
               className="homerowIcon"
               onClick={() =>
                 setRenderScreen(
-                  <AccountScreen
-                    onSetRenderScreen={setRenderScreenFunction}
-                    user={{ user, setUserFunction }}
-                  />
+                  <AccountScreen onSetRenderScreen={setRenderScreenFunction} />
                 )
               }
             />

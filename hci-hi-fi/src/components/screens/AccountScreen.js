@@ -17,10 +17,7 @@ export default function AccountScreen(props) {
             className="settingsButton"
             onClick={() =>
               props.onSetRenderScreen(
-                <SettingsScreen
-                  clicky={props.onSetRenderScreen}
-                  user={props.user}
-                />
+                <SettingsScreen clicky={props.onSetRenderScreen} />
               )
             }
           >
