@@ -7,6 +7,7 @@
   border-color: #60606060;
   font-weight: 500;
   color: #112328;
+  font-family: "DM Sans", sans-serif;
 }
 
 .submissions-chip {
@@ -22,6 +23,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.3rem;
+  font-family: "DM Sans", sans-serif;
 }
 
 .chip img {
