@@ -26,6 +26,10 @@ function App() {
     <HomeScreen onSetRenderScreen={setRenderScreenFunction} />
   );
 
+  let userSettings = {
+    fontSize: "normal",
+  };
+
   return (
     <div className="App">
       <div className="screenContainer">
