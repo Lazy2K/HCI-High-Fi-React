@@ -11,61 +11,16 @@ import Chip from "../common/submissionChip";
 import editIcon from "./../../assets/icons/Edit.png";
 import logo from "./../../assets/logos/logo-1.png";
 
-//submission screen
 export default function SubmissionScreen(props) {
   const handleChipClick = (attribute) => {
     // Handle chip click event, you can perform any action here
     console.log(`Clicked on chip with attribute: ${attribute}`);
   };
-  const [show, setShow] = useState(false);
-  const handleShow = () => setShow(true);
-  const handleHide = () => setShow(false);
 
-  const [count, setCount] = useState(0);
   return (
     <div className="SubmissionScreen" style={styles.submissionScreen}>
-      <div className="SubmissionContainer" style={styles.submissionsGrid}>
-        <BackButton
-          clickFunction={() =>
-            props.clicky(<HomeScreen onSetRenderScreen={props.clicky} />)
-          }
-        />
-      </div>
+      <div className="SubmissionContainer" style={styles.submissionsGrid}></div>
       <div className="PageContainer" style={styles.pageContainer}>
-        <div className="ModalContainer" style={styles.modalContainer}>
-          <div className="modal" style={{ display: show ? "block" : "none" }}>
-            <div style={{ justifyContent: "center", display: "flex" }}>
-              <img src={birdDraw} className="modalImage" />
-            </div>
-            <div className="modalCounterContainer">
-              <button
-                className="modalCounterNumber modalCounterButton"
-                onClick={() =>
-                  count > 0
-                    ? setCount(count - 1)
-                    : console.log("Count can't go below zero")
-                }
-              >
-                -
-              </button>
-              <div class="modalCounterNumber">{count}</div>
-              <button
-                class="modalCounterNumber modalCounterButton"
-                onClick={() => setCount(count + 1)}
-              >
-                +
-              </button>
-            </div>
-            <div>
-              <button className="confirmButon" onClick={handleHide}>
-                Confirm
-              </button>
-            </div>
-          </div>
-        </div>
-        <button onClick={handleShow} style={styles.reportButton}>
-          Report Numbers
-        </button>
         <div className="HomeScreen" style={styles.submissionScreen}>
           <div
             className="HomeScreenContainer"
@@ -84,7 +39,6 @@ export default function SubmissionScreen(props) {
                 color={"#ffebc8"}
                 icon={editIcon}
                 submissionsPage
-                onClick={() => handleChipClick()}
               />
               <Chip
                 attribute={"sub2"}
