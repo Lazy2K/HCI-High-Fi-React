@@ -17,16 +17,16 @@ export default function SettingsScreen(props) {
         <div className="accountTitle">Settings.</div>
         <div className="settingsInfoContainer">
           <div className="settingsInfoRow">
-            <div>Username: Nick</div>
+            <div>Font Size</div>
             <div>Edit</div>
           </div>
           <div className="settingsInfoRow">
-            <div>Email: nick@gmail.com</div>
+            <div>High Contrast</div>
             <div>Edit</div>
           </div>
           <div className="settingsInfoRow">
-            <div className="acountInfoData">Password</div>
-            <div className="accountInfoEdit">Change Password</div>
+            <div>Text to Speech</div>
+            <div>Edit</div>
           </div>
         </div>
       </div>
