@@ -13,14 +13,12 @@
 }
 .cardInfo {
   font-weight: 600;
-  font-size: 2rem;
   padding: 1rem;
   color: #112328;
   font-family: "DM Sans", sans-serif;
   text-align: left;
 }
 .cardDescription {
-  font-size: 1rem;
   font-weight: 400;
   margin-top: 0.2rem;
   margin-bottom: 1rem;

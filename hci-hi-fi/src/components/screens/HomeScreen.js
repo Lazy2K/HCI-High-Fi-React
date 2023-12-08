@@ -52,17 +52,17 @@ export default function HomeScreen({ onSetRenderScreen }) {
           fontSize: internalUser.largeFont ? "3rem" : "1rem",
         }}
       >
-        <div className="HomeScreenContainer" style={styles.homeContainer}>
+        <div className="homeContainer">
           <div className="Header"></div>
-          <img src={logo} style={styles.logo} />
-          <div className="Title" style={styles.title}>
-            Welcome Nick, what birds can you see?
-          </div>
+          <img src={logo} className="logo" />
+          <div className="title">Welcome Nick, what birds can you see?</div>
         </div>
-        <div>Large Font: {internalUser.largeFont ? "Yes" : "No"}</div>
-        <div>High Contrast: {internalUser.highContrast ? "Yes" : "No"}</div>
-        <div>TTS: {internalUser.textToSpeach ? "Yes" : "No"}</div>
-        <div className="ChipContainer" style={styles.chipContainer}>
+        <div
+          className="chipContainer"
+          style={{
+            fontSize: internalUser.largeFont ? "3rem" : "1rem",
+          }}
+        >
           <Chip attribute={"Owls"} color={"#ffebc8"} />
           <Chip attribute={"Parrots"} color={"#ffebc8"} />
           <Chip attribute={"Hummingbirds"} color={"#ffebc8"} />
@@ -73,8 +73,8 @@ export default function HomeScreen({ onSetRenderScreen }) {
           <Chip attribute={"Thrushes"} color={"#ffebc8"} />
           <Chip attribute={"Wrens"} color={"#ffebc8"} />
         </div>
-        <div className="HomeScreenContainer" style={styles.homeContainer}>
-          <div className="cardContainer" style={styles.cardContainer}>
+        <div className="homeContainer">
+          <div className="cardContainer">
             <Card
               image={bird04}
               name="Chaffinch"
@@ -82,6 +82,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f1ae84"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird02}
@@ -90,6 +91,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#ddf4fa"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird05}
@@ -98,6 +100,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#86a5d2"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird06}
@@ -106,6 +109,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f9d58c"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird08}
@@ -114,6 +118,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f9d58c"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird01}
@@ -122,6 +127,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#9e9e9e"}
+              large={internalUser.largeFont}
             />
 
             <Card
@@ -131,6 +137,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#9e9e9e"}
+              large={internalUser.largeFont}
             />
 
             <Card
@@ -140,6 +147,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#ecb88f"}
+              large={internalUser.largeFont}
             />
 
             <Card
@@ -149,6 +157,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#ecb88f"}
+              large={internalUser.largeFont}
             />
 
             <Card
@@ -158,6 +167,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f1ae84"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird11}
@@ -166,6 +176,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#a7e391"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird12}
@@ -174,6 +185,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#91b4d2"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird13}
@@ -182,6 +194,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f9d58c"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird14}
@@ -190,6 +203,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#ecb88f"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird15}
@@ -198,6 +212,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f1ae84"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird16}
@@ -206,6 +221,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#ddf4fa"}
+              large={internalUser.largeFont}
             />
 
             <Card
@@ -215,6 +231,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#86a5d2"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird18}
@@ -223,6 +240,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#f9d58c"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird19}
@@ -231,6 +249,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#91b4d2"}
+              large={internalUser.largeFont}
             />
             <Card
               image={bird20}
@@ -239,57 +258,12 @@ export default function HomeScreen({ onSetRenderScreen }) {
                 onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
               }
               color={"#ddf4fa"}
+              large={internalUser.largeFont}
             />
           </div>
-          <div style={styles.endText}>That's all the them!</div>
+          <div className="endText">That's all the them!</div>
         </div>
       </div>
     </UserContextProvider>
   );
 }
-
-const styles = {
-  homeScreen: {
-    width: "100%",
-    height: "100%",
-  },
-  homeContainer: {
-    padding: "1.3rem",
-    display: "flex",
-    flexDirection: "column",
-    marginBottom: "2rem",
-  },
-  chipContainer: {
-    display: "flex",
-    flexDirection: "row",
-    overflowX: "auto",
-    position: "absoulte",
-    scrollbarWidth: "none",
-    marginTop: "2rem",
-    paddingLeft: "1rem",
-    paddingRight: "1rem",
-  },
-  cardContainer: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gridGap: "0.7rem",
-    marginBottom: "2rem",
-  },
-  title: {
-    fontSize: "3rem",
-    fontWeight: "600",
-    color: "#032135",
-    lineHeight: "0.9",
-  },
-  logo: {
-    width: "3rem",
-    height: "3rem",
-    marginBottom: "3rem",
-  },
-  endText: {
-    width: "100%",
-    textAlign: "center",
-    marginBottom: "5rem",
-    fontWeight: "500",
-  },
-};

@@ -28,7 +28,7 @@ export default function SettingsScreen(props) {
           <div className="accountTitle">Settings.</div>
           <div className="settingsInfoContainer">
             <div className="settingsInfoRow">
-              <div>Font Size</div>
+              <div>Large Font</div>
               <Switch
                 checked={internalUser.largeFont}
                 onChange={() =>

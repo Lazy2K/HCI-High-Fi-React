@@ -8,9 +8,15 @@ export default function Card(props) {
       style={{ backgroundColor: `${props.color}` }}
     >
       <img src={props.image} className="cardImage" alt="Bird Image" />
-      <div className="cardInfo">
+      <div
+        className="cardInfo"
+        style={{ fontSize: props.large ? "3rem" : "2rem" }}
+      >
         {props.name}
-        <p className="cardDescription">
+        <p
+          className="cardDescription"
+          style={{ fontSize: props.large ? "2rem" : "1rem" }}
+        >
           This is a short description of the bird's appearance
         </p>
       </div>

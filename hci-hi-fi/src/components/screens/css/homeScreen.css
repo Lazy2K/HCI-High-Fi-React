@@ -2,3 +2,43 @@
   width: 100%;
   height: 100%;
 }
+
+.homeContainer {
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.chipContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  position: absoulte;
+  scrollbar-width: none;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #032135;
+  line-height: 0.9;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+.endText {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
