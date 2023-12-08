@@ -36,6 +36,8 @@ import logo from "./../../assets/logos/logo-1.png";
 
 import BirdScreen from "./BirdScreen";
 
+import "./css/homeScreen.css";
+
 import { useContext } from "react";
 import { UserContextProvider, UserContext } from "../function/userContext";
 
@@ -44,7 +46,12 @@ export default function HomeScreen({ onSetRenderScreen }) {
 
   return (
     <UserContextProvider>
-      <div className="HomeScreen" style={styles.homeScreen}>
+      <div
+        className="homeScreen"
+        style={{
+          fontSize: internalUser.largeFont ? "3rem" : "1rem",
+        }}
+      >
         <div className="HomeScreenContainer" style={styles.homeContainer}>
           <div className="Header"></div>
           <img src={logo} style={styles.logo} />
@@ -52,6 +59,9 @@ export default function HomeScreen({ onSetRenderScreen }) {
             Welcome Nick, what birds can you see?
           </div>
         </div>
+        <div>Large Font: {internalUser.largeFont ? "Yes" : "No"}</div>
+        <div>High Contrast: {internalUser.highContrast ? "Yes" : "No"}</div>
+        <div>TTS: {internalUser.textToSpeach ? "Yes" : "No"}</div>
         <div className="ChipContainer" style={styles.chipContainer}>
           <Chip attribute={"Owls"} color={"#ffebc8"} />
           <Chip attribute={"Parrots"} color={"#ffebc8"} />

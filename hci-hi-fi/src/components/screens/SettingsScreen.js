@@ -41,11 +41,27 @@ export default function SettingsScreen(props) {
             </div>
             <div className="settingsInfoRow">
               <div>High Contrast</div>
-              <div>Edit</div>
+              <Switch
+                checked={internalUser.highContrast}
+                onChange={() =>
+                  setInternalUser({
+                    ...internalUser,
+                    highContrast: internalUser.highContrast ? false : true,
+                  })
+                }
+              ></Switch>
             </div>
             <div className="settingsInfoRow">
               <div>Text to Speech</div>
-              <div>Edit</div>
+              <Switch
+                checked={internalUser.textToSpeach}
+                onChange={() =>
+                  setInternalUser({
+                    ...internalUser,
+                    textToSpeach: internalUser.textToSpeach ? false : true,
+                  })
+                }
+              ></Switch>
             </div>
           </div>
         </div>
