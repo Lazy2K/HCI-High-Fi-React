@@ -55,7 +55,12 @@ export default function HomeScreen({ onSetRenderScreen }) {
         <div className="homeContainer">
           <div className="Header"></div>
           <img src={logo} className="logo" />
-          <div className="title">Welcome Nick, what birds can you see?</div>
+          <div
+            className="title"
+            style={{ fontSize: internalUser.largeFont ? "4rem" : "3rem" }}
+          >
+            Welcome Nick, what birds can you see?
+          </div>
         </div>
         <div
           className="chipContainer"
