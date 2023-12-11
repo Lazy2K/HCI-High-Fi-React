@@ -68,15 +68,51 @@ export default function HomeScreen({ onSetRenderScreen }) {
             fontSize: internalUser.largeFont ? "3rem" : "1rem",
           }}
         >
-          <Chip attribute={"Owls"} color={"#ffebc8"} />
-          <Chip attribute={"Parrots"} color={"#ffebc8"} />
-          <Chip attribute={"Hummingbirds"} color={"#ffebc8"} />
-          <Chip attribute={"Woodpeckers"} color={"#ffebc8"} />
-          <Chip attribute={"Shorebirds"} color={"#ffebc8"} />
-          <Chip attribute={"Flacons"} color={"#ffebc8"} />
-          <Chip attribute={"Pelicans"} color={"#ffebc8"} />
-          <Chip attribute={"Thrushes"} color={"#ffebc8"} />
-          <Chip attribute={"Wrens"} color={"#ffebc8"} />
+          <Chip
+            attribute={"Owls"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Parrots"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Hummingbirds"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Woodpeckers"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Shorebirds"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Flacons"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Pelicans"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Thrushes"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Wrens"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
         </div>
         <div className="homeContainer">
           <div className="cardContainer">
@@ -88,6 +124,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f1ae84"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird02}
@@ -97,6 +134,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#ddf4fa"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird05}
@@ -106,6 +144,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#86a5d2"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird06}
@@ -115,6 +154,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f9d58c"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird08}
@@ -124,6 +164,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f9d58c"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird01}
@@ -133,6 +174,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#9e9e9e"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
 
             <Card
@@ -143,6 +185,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#9e9e9e"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
 
             <Card
@@ -153,6 +196,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#ecb88f"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
 
             <Card
@@ -163,6 +207,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#ecb88f"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
 
             <Card
@@ -173,6 +218,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f1ae84"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird11}
@@ -182,6 +228,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#a7e391"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird12}
@@ -191,6 +238,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#91b4d2"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird13}
@@ -200,6 +248,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f9d58c"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird14}
@@ -209,6 +258,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#ecb88f"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird15}
@@ -218,6 +268,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f1ae84"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird16}
@@ -227,6 +278,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#ddf4fa"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
 
             <Card
@@ -237,6 +289,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#86a5d2"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird18}
@@ -246,6 +299,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#f9d58c"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird19}
@@ -255,6 +309,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#91b4d2"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
             <Card
               image={bird20}
@@ -264,6 +319,7 @@ export default function HomeScreen({ onSetRenderScreen }) {
               }
               color={"#ddf4fa"}
               large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
             />
           </div>
           <div className="endText">That's all the them!</div>
