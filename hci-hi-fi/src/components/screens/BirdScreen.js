@@ -84,7 +84,15 @@ export default function BirdScreen(props) {
                   Chaffinch
                 </div>
                 <div className="ICONS">
-                  <img src={share} className="shareIcon" />
+                  <img
+                    src={share}
+                    className="shareIcon"
+                    style={{
+                      filter: internalUser.highContrast
+                        ? "invert(100%)"
+                        : "invert(0%)",
+                    }}
+                  />
                 </div>
               </div>
               <div>
