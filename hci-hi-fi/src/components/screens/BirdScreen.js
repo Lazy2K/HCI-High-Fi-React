@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import Sound from "../function/AudioPlayer";
 import BackButton from "../common/BackButton";
@@ -11,7 +11,11 @@ import share from "./../../assets/icons/Share.png";
 
 import "./css/BirdScreen.css";
 
+import { UserContextProvider, UserContext } from "../function/userContext";
+
 export default function BirdScreen(props) {
+  const [internalUser, setInternalUser] = useContext(UserContext);
+
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleHide = () => setShow(false);
@@ -19,81 +23,81 @@ export default function BirdScreen(props) {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="BirdScreen" style={styles.birdScreen}>
-      <div className="HeaderContainer" style={styles.headerContainer}>
-        <BackButton
-          clickFunction={() =>
-            props.clicky(<HomeScreen onSetRenderScreen={props.clicky} />)
-          }
-        />
-      </div>
-      <div className="PageContainer" style={styles.pageContainer}>
-        <div className="ModalContainer" style={styles.modalContainer}>
-          <div className="modal" style={{ display: show ? "block" : "none" }}>
-            <div style={{ justifyContent: "center", display: "flex" }}>
-              <img src={birdDraw} className="modalImage" />
-            </div>
-            <div className="modalCounterContainer">
-              <button
-                className="modalCounterNumber modalCounterButton"
-                onClick={() =>
-                  count > 0
-                    ? setCount(count - 1)
-                    : console.log("Count can't go below zero")
-                }
-              >
-                -
-              </button>
-              <div class="modalCounterNumber">{count}</div>
-              <button
-                class="modalCounterNumber modalCounterButton"
-                onClick={() => setCount(count + 1)}
-              >
-                +
-              </button>
-            </div>
-            <div>
-              <button className="confirmButon" onClick={handleHide}>
-                Confirm
-              </button>
-            </div>
-          </div>
+    <UserContextProvider>
+      <div className="birdScreen" style={styles.birdScreen}>
+        <div className="headerContainer" style={styles.headerContainer}>
+          <BackButton
+            clickFunction={() =>
+              props.clicky(<HomeScreen onSetRenderScreen={props.clicky} />)
+            }
+          />
         </div>
-
-        <img src={mainBird} style={styles.birdImage} alt="Bird Image" />
-        <div style={styles.birdInfo}>
-          <div style={styles.birdInfoInner}>
-            <div style={styles.birdInfoHeader}>
-              <div className="TITLE" style={styles.birdTitle}>
-                Chaffinch
+        <div className="birdPageContainer">
+          <div className="modalContainer">
+            <div className="modal" style={{ display: show ? "block" : "none" }}>
+              <div style={{ justifyContent: "center", display: "flex" }}>
+                <img src={birdDraw} className="modalImage" />
               </div>
-              <div className="ICONS">
-                <img src={share} style={styles.shareIcon} />
+              <div className="modalCounterContainer">
+                <button
+                  className="modalCounterNumber modalCounterButton"
+                  onClick={() =>
+                    count > 0
+                      ? setCount(count - 1)
+                      : console.log("Count can't go below zero")
+                  }
+                >
+                  -
+                </button>
+                <div class="modalCounterNumber">{count}</div>
+                <button
+                  class="modalCounterNumber modalCounterButton"
+                  onClick={() => setCount(count + 1)}
+                >
+                  +
+                </button>
               </div>
-            </div>
-            <div>
               <div>
-                The Chaffinch is one of the most widespread and common birds in
-                Britain and Ireland. Its patterned plumage helps it blend in
-                when feeding on the ground, so it is easiest to see when it
-                flies, as a flash of white on the wings and white outer tail
-                feathers is revealed. It's shy when it comes to bird feeders,
-                preferring to hop about under the bird table or under the hedge.
-                You'll usually hear Chaffinches before you see them, thanks to
-                their loud song and range of calls.
-              </div>
-              <div style={{ textAlign: "center", marginTop: "4rem" }}>
-                <div></div>
-                <Sound style={styles.birdAudio} />
+                <button className="confirmButon" onClick={handleHide}>
+                  Confirm
+                </button>
               </div>
             </div>
           </div>
-          <button onClick={handleShow} style={styles.reportButton}>
-            Report Numbers
-          </button>
+
+          <img src={mainBird} className="birdImage" alt="Bird Image" />
+          <div className="birdInfo">
+            <div className="birdInfoInner">
+              <div className="birdInfoHeader">
+                <div className="birdTitle">Chaffinch</div>
+                <div className="ICONS">
+                  <img src={share} className="shareIcon" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  The Chaffinch is one of the most widespread and common birds
+                  in Britain and Ireland. Its patterned plumage helps it blend
+                  in when feeding on the ground, so it is easiest to see when it
+                  flies, as a flash of white on the wings and white outer tail
+                  feathers is revealed. It's shy when it comes to bird feeders,
+                  preferring to hop about under the bird table or under the
+                  hedge. You'll usually hear Chaffinches before you see them,
+                  thanks to their loud song and range of calls.
+                </div>
+                <div style={{ textAlign: "center", marginTop: "4rem" }}>
+                  <div></div>
+                  <Sound style={styles.birdAudio} />
+                </div>
+              </div>
+            </div>
+            <button onClick={handleShow} className="reportButton">
+              Report Numbers
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </UserContextProvider>
   );
 }
 

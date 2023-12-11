@@ -42,3 +42,67 @@
   background-color: transparent;
   border: 0px;
 }
+
+.birdScreen {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1.3rem;
+}
+.birdPageContainer {
+  padding: 0rem 1.3rem 8rem 1.3rem;
+}
+.birdImage {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.birdInfo {
+  padding: 1rem 0rem 0rem 0rem;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+.birdInfoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.birdTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #032135;
+}
+.shareIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.birdAudio {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.reportButton {
+  width: 100%;
+  border: 0px;
+  padding: 2rem;
+  background-color: #f1ae84;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 0px 0px 10px 10px;
+}
+.birdInfoInner {
+  padding: 0rem 1rem 0rem 1rem;
+}
+.modalContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
