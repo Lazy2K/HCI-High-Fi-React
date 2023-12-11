@@ -68,15 +68,51 @@ export default function HomeScreen({ onSetRenderScreen }) {
             fontSize: internalUser.largeFont ? "3rem" : "1rem",
           }}
         >
-          <Chip attribute={"Owls"} color={"#ffebc8"} />
-          <Chip attribute={"Parrots"} color={"#ffebc8"} />
-          <Chip attribute={"Hummingbirds"} color={"#ffebc8"} />
-          <Chip attribute={"Woodpeckers"} color={"#ffebc8"} />
-          <Chip attribute={"Shorebirds"} color={"#ffebc8"} />
-          <Chip attribute={"Flacons"} color={"#ffebc8"} />
-          <Chip attribute={"Pelicans"} color={"#ffebc8"} />
-          <Chip attribute={"Thrushes"} color={"#ffebc8"} />
-          <Chip attribute={"Wrens"} color={"#ffebc8"} />
+          <Chip
+            attribute={"Owls"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Parrots"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Hummingbirds"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Woodpeckers"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Shorebirds"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Flacons"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Pelicans"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Thrushes"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Wrens"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
         </div>
         <div className="homeContainer">
           <div className="cardContainer">
