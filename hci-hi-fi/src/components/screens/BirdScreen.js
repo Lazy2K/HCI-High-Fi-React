@@ -69,13 +69,20 @@ export default function BirdScreen(props) {
           <div className="birdInfo">
             <div className="birdInfoInner">
               <div className="birdInfoHeader">
-                <div className="birdTitle">Chaffinch</div>
+                <div
+                  className="birdTitle"
+                  style={{ fontSize: internalUser.largeFont ? "4rem" : "3rem" }}
+                >
+                  Chaffinch
+                </div>
                 <div className="ICONS">
                   <img src={share} className="shareIcon" />
                 </div>
               </div>
               <div>
-                <div>
+                <div
+                  style={{ fontSize: internalUser.largeFont ? "2rem" : "1rem" }}
+                >
                   The Chaffinch is one of the most widespread and common birds
                   in Britain and Ireland. Its patterned plumage helps it blend
                   in when feeding on the ground, so it is easiest to see when it
@@ -91,7 +98,11 @@ export default function BirdScreen(props) {
                 </div>
               </div>
             </div>
-            <button onClick={handleShow} className="reportButton">
+            <button
+              onClick={handleShow}
+              className="reportButton"
+              style={{ fontSize: internalUser.largeFont ? "3rem" : "2rem" }}
+            >
               Report Numbers
             </button>
           </div>
