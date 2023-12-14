@@ -1,136 +1,187 @@
-//comps
-import { useState } from "react";
-import Submission from "../common/Submission";
-import BackButton from "../common/BackButton";
-import HomeScreen from "./HomeScreen";
-import birdDraw from "./../../assets/png/orange-bird.png";
+// Components
+import Chip from "./../common/Chip";
+import Card from "./../common/Card";
+import SubCard from "./../common/SubCard";
 
-//
-import BirdScreen from "./BirdScreen";
-import Chip from "../common/submissionChip";
-import editIcon from "./../../assets/icons/Edit.png";
+// Images
+import image01 from "./../../assets/md/midres-1.jpg";
+import image02 from "./../../assets/md/midres-2.jpg";
+import image03 from "./../../assets/md/midres-3.jpg";
+import image04 from "./../../assets/md/midres-4.jpg";
+import image05 from "./../../assets/md/midres-5.jpg";
+import image06 from "./../../assets/md/midres-6.jpg";
+
+// Bird Images
+import bird01 from "./../../assets/bird-images/blackbird.jpg";
+import bird02 from "./../../assets/bird-images/blue-tit.jpg";
+import bird03 from "./../../assets/bird-images/carrion-crow.jpg";
+import bird04 from "./../../assets/bird-images/chaffinch.jpg";
+import bird05 from "./../../assets/bird-images/coal-tit.jpg";
+import bird06 from "./../../assets/bird-images/collared-dove.jpg";
+import bird07 from "./../../assets/bird-images/dunnock.jpg";
+import bird08 from "./../../assets/bird-images/feral-pigeon.jpg";
+import bird09 from "./../../assets/bird-images/goldfinch.jpg";
+import bird10 from "./../../assets/bird-images/great-tit.jpg";
+import bird11 from "./../../assets/bird-images/greenfinch.jpg";
+import bird12 from "./../../assets/bird-images/house-sparrow.jpg";
+import bird13 from "./../../assets/bird-images/jackdaw.jpg";
+import bird14 from "./../../assets/bird-images/long-tailed-tit.jpg";
+import bird15 from "./../../assets/bird-images/magpie.jpg";
+import bird16 from "./../../assets/bird-images/robin.jpg";
+import bird17 from "./../../assets/bird-images/rook.jpg";
+import bird18 from "./../../assets/bird-images/starling.jpg";
+import bird19 from "./../../assets/bird-images/wood-pigeon.jpg";
+import bird20 from "./../../assets/bird-images/wren.jpg";
+
 import logo from "./../../assets/logos/logo-1.png";
 
-export default function SubmissionScreen(props) {
-  const handleChipClick = (attribute) => {
-    // Handle chip click event, you can perform any action here
-    console.log(`Clicked on chip with attribute: ${attribute}`);
-  };
+import BirdScreen from "./BirdScreen";
+
+import "./css/homeScreen.css";
+
+import { useContext } from "react";
+import { UserContextProvider, UserContext } from "../function/userContext";
+
+export default function HomeScreen({ onSetRenderScreen }) {
+  const [internalUser, setInternalUser] = useContext(UserContext);
 
   return (
-    <div className="SubmissionScreen" style={styles.submissionScreen}>
-      <div className="SubmissionContainer" style={styles.submissionsGrid}></div>
-      <div className="PageContainer" style={styles.pageContainer}>
-        <div className="HomeScreen" style={styles.submissionScreen}>
+    <UserContextProvider>
+      <div
+        className="homeScreen"
+        style={{
+          fontSize: internalUser.largeFont ? "3rem" : "1rem",
+        }}
+      >
+        <div className="homeContainer">
+          <div className="Header"></div>
+          <img src={logo} className="logo" />
           <div
-            className="HomeScreenContainer"
-            style={styles.submissionContainer}
+            className="title"
+            style={{ fontSize: internalUser.largeFont ? "4rem" : "3rem" }}
           >
-            <div className="Header"></div>
-            <img src={logo} style={styles.logo} />
-            <div className="Title" style={styles.title}>
-              Welcome Nick, what birds can you see?
-            </div>
-          </div>
-          <div className="SubmissionScreen" style={styles.submissionScreen}>
-            <div className="SubmissionContainer" style={styles.submissionsGrid}>
-              <Chip
-                attribute={"sub1"}
-                color={"#ffebc8"}
-                icon={editIcon}
-                submissionsPage
-              />
-              <Chip
-                attribute={"sub2"}
-                color={"#ffebc8"}
-                icon={editIcon}
-                submissionsPage
-              />
-              <Chip
-                attribute={"sub3"}
-                color={"#ffebc8"}
-                icon={editIcon}
-                submissionsPage
-              />
-              <Chip
-                attribute={"sub24"}
-                color={"#ffebc8"}
-                icon={editIcon}
-                submissionsPage
-              />
-              <Chip
-                attribute={"sub5"}
-                color={"#ffebc8"}
-                icon={editIcon}
-                submissionsPage
-              />
-              <Chip
-                attribute={"sub6"}
-                color={"#ffebc8"}
-                icon={editIcon}
-                submissionsPage
-              />
-            </div>
+            Your submissions
           </div>
         </div>
+        <div
+          className="chipContainer"
+          style={{
+            fontSize: internalUser.largeFont ? "3rem" : "1rem",
+          }}
+        >
+          <Chip
+            attribute={"Today"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Yesterday"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Week"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Month"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+          <Chip
+            attribute={"Later"}
+            color={"#ffebc8"}
+            highContrast={internalUser.highContrast}
+          />
+        </div>
+        <div className="homeContainer">
+          <div className="subCardContainer">
+            <SubCard
+              image={bird02}
+              name="Blue Tit"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#ddf4fa"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+            <SubCard
+              image={bird05}
+              name="Coal Tit"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#86a5d2"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+            <SubCard
+              image={bird06}
+              name="Dove"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#f9d58c"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+
+            <SubCard
+              image={bird11}
+              name="Green"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#a7e391"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+            <SubCard
+              image={bird12}
+              name="Sparrow"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#91b4d2"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+            <SubCard
+              image={bird15}
+              name="Magpie"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#f1ae84"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+            <SubCard
+              image={bird18}
+              name="Starling"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#f9d58c"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+            <SubCard
+              image={bird20}
+              name="Wren"
+              onPress={() =>
+                onSetRenderScreen(<BirdScreen clicky={onSetRenderScreen} />)
+              }
+              color={"#ddf4fa"}
+              large={internalUser.largeFont}
+              highContrast={internalUser.highContrast}
+            />
+          </div>
+          <div className="endText">That's all the them!</div>
+        </div>
       </div>
-    </div>
+    </UserContextProvider>
   );
 }
-
-const styles = {
-  submissionScreen: {
-    width: "100%",
-    height: "100%",
-  },
-  submissionContainer: {
-    padding: "1.3rem",
-    display: "flex",
-    flexDirection: "column",
-    marginBottom: "8rem",
-  },
-  submissionContainer: {
-    display: "flex",
-    flexDirection: "row",
-    overflowX: "auto",
-    position: "absoulte",
-    scrollbarWidth: "none",
-    marginTop: "2rem",
-    paddingLeft: "1rem",
-    paddingRight: "1rem",
-  },
-  submissionsGrid: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gridGap: "0.7rem",
-  },
-  title: {
-    fontSize: "3rem",
-    fontWeight: "600",
-    color: "white",
-    lineHeight: "0.9",
-  },
-  logo: {
-    width: "3rem",
-    height: "3rem",
-    marginBottom: "3rem",
-  },
-  pageContainer: {
-    padding: "0rem 1.3rem 8rem 1.3rem",
-  },
-  modalContainer: {
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-  },
-  reportButton: {
-    width: "100%",
-    border: "0px",
-    padding: "2rem",
-    backgroundColor: "#f1ae84",
-    fontSize: "1.6rem",
-    fontFamily: "DM Sans, sans-serif",
-    fontWeight: "600",
-    borderRadius: "0px 0px 10px 10px",
-  },
-};

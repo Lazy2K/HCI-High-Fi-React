@@ -12,6 +12,7 @@ import share from "./../../assets/icons/Share.png";
 import "./css/BirdScreen.css";
 
 import { UserContextProvider, UserContext } from "../function/userContext";
+import Alert from "@mui/material/Alert";
 
 export default function BirdScreen(props) {
   const [internalUser, setInternalUser] = useContext(UserContext);

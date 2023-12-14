@@ -25,6 +25,11 @@
   grid-gap: 0.7rem;
   margin-bottom: 2rem;
 }
+.subCardContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
 .title {
   font-weight: 600;
   color: #032135;
