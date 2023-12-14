@@ -46,3 +46,10 @@
   margin-bottom: 5rem;
   font-weight: 500;
 }
+
+.filterIcon {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 1rem;
+  display: none;
+}

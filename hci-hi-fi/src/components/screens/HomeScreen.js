@@ -34,15 +34,18 @@ import bird20 from "./../../assets/bird-images/wren.jpg";
 
 import logo from "./../../assets/logos/logo-1.png";
 
+import clearFilter from "./../../assets/icons/ClearFilters.png";
+
 import BirdScreen from "./BirdScreen";
 
 import "./css/homeScreen.css";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { UserContextProvider, UserContext } from "../function/userContext";
 
 export default function HomeScreen({ onSetRenderScreen }) {
   const [internalUser, setInternalUser] = useContext(UserContext);
+  const [filterVis, setFilterVis] = useState(false);
 
   return (
     <UserContextProvider>
@@ -68,50 +71,67 @@ export default function HomeScreen({ onSetRenderScreen }) {
             fontSize: internalUser.largeFont ? "3rem" : "1rem",
           }}
         >
+          <div>
+            <img
+              src={clearFilter}
+              className="filterIcon"
+              onClick={() => setFilterVis(false)}
+              style={{ display: filterVis ? "block" : "none" }}
+            />
+          </div>
           <Chip
             attribute={"Owls"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Parrots"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Hummingbirds"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Woodpeckers"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Shorebirds"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Flacons"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Pelicans"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Thrushes"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
           <Chip
             attribute={"Wrens"}
             color={"#ffebc8"}
             highContrast={internalUser.highContrast}
+            onClick={() => setFilterVis(true)}
           />
         </div>
         <div className="homeContainer">
