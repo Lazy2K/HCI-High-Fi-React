@@ -23,3 +23,41 @@
   margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
+
+.subCard {
+  border-radius: 10px;
+  background-color: #ffebc8;
+  border: 0px;
+  border-style: none;
+  border-color: #60606060;
+  backdrop-filter: blur(5px);
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.subCardImage {
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.subButtonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.subEditButton {
+  background-color: transparent;
+  border: 0px;
+}
+
+.subEditIcon {
+  width: 2rem;
+  height: 2rem;
+}
