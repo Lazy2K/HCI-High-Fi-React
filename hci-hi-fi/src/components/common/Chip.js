@@ -2,7 +2,8 @@ import "./chipStyle.css";
 
 export default function Chip(props) {
   return (
-    <div
+    <button
+      onClick={props.onClick}
       className="chip"
       style={{
         backgroundColor: props.highContrast ? "black" : `${props.color}`,
@@ -10,6 +11,6 @@ export default function Chip(props) {
       }}
     >
       {props.attribute}
-    </div>
+    </button>
   );
 }
